@@ -6,10 +6,10 @@ Large Language Models
 
 - GPT - OpenAI
 - Bart - Google
-- LLaMa
-- PaLM
-- BLOOM
-- FLAN-T5
+- LLaMa - Meta
+- PaLM - Google
+- BLOOM - Bloomburg
+- FLAN-T5 - Google
 
 ## Providers
 
