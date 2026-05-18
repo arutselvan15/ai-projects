@@ -7,3 +7,10 @@
 - [Prompt](prompt/README.md)
 - [Generative Config](generative-config/README.md)
 - [Project lifecycle](project-lifecycle/README.md)
+
+## Projects
+
+- [Summarize Dialog](projects/summarize_dialog/READMD.md)
+
+Feed the conversation between two person to LLM and ask for summary, improve the prompts to improve the response.
+
