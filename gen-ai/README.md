@@ -7,6 +7,8 @@
 - [Prompt](prompt/README.md)
 - [Generative Config](generative-config/README.md)
 - [Project Lifecycle And Roles](project-lifecycle-and-roles/README.md)
+- [Model](model/README.md)
+
 
 ## Projects
 

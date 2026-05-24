@@ -2,6 +2,8 @@
 
 ## Project Lifecycle
 
+![lifecycle.png](lifecycle.png)
+
 ### Scope
 
 Define the use case
