@@ -103,3 +103,31 @@ Step1: Train an answer quality (reward) model.  Human feedback scores for respon
 
 
 Step2: Have LLM generate a lot of answers, Further train it to generate more responses that get high scores.
+
+
+## Fine-tuning on single task
+
+While LLMs have become famous for their ability to perform many different language tasks within a single model, your application may only need to perform a single task. In this case, you can fine-tune a pre-trained model to improve performance on only the task that is of interest to you.
+For example, summarization using a dataset of examples for that task. Interestingly, good results can be achieved with relatively few examples. Often just 500-1,000 examples can result in good performance in contrast to the billions of pieces of texts that the model saw during pre-training.
+
+![single-task.png](single-task.png)
+
+### Catastrophic Forgetting
+
+Catastrophic forgetting happens because the full fine-tuning process modifies the weights of the original LLM. While this leads to great performance on the single fine-tuning task, it can degrade performance on other tasks.
+
+![catas.png](catas.png)
+
+fine-tuned model for sentiment analysis may no longer carry out other tasks.
+
+How to avoid this?
+
+You can perform fine-tuning on multiple tasks at one time. Good multitask fine-tuning may require 50-100,000 examples across many tasks, and so will require more data and compute to train.
+
+### PEFT
+
+PEFT is a set of techniques that preserves the weights of the original LLM and trains only a small number of task-specific adapter layers and parameters. PEFT shows greater robustness to catastrophic forgetting since most of the pre-trained weights are left unchanged
+
+
+
+
